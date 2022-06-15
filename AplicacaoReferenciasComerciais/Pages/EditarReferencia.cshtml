@@ -1,0 +1,51 @@
+﻿@page
+@model EditarReferenciaModel
+@{
+    ViewData["Title"] = "Editar Referências";
+}
+<div class="container-fluid">
+    <h1>@ViewData["Title"]</h1>
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-12 mb-12">
+      <label for="validationCustom01">Nome Empresa</label>
+      <input type="text" class="form-control" id="validationCustom01"  value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-12 mb-12">
+      <label for="validationCustom02">Nome Funcionário</label>
+      <input type="text" class="form-control" id="validationCustom02" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+   </div>
+
+  <div class="form-row">
+    <div class="col-md-12 mb-12">
+      <label for="validationCustom03">Cidade</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+     
+    </div>
+    <div class="form-row">
+    <div class="col-md-12 mb-12">
+      <label for="validationCustom03">Estado</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+     
+    </div>
+    <div class="col-md-12 mb-12">
+      <label for="validationCustom04">E-mail</label>
+      <input type="text" class="form-control" id="validationCustom04" required> 
+    </div>
+    <div class="col-md-12 mb-12">
+      <label for="validationCustom05">Observação</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+     </div>
+  </div> 
+      
+         <button class="btn btn-success" type="submit" style="margin-top:10px;">Salvar</button>
+      
+</form>
+</div>
