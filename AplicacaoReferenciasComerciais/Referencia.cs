@@ -9,13 +9,14 @@ namespace AplicacaoReferenciasComerciais
 {
     public class Referencia
     {
-        public string Nome { get; set; }
+        public string NomeFuncionario { get; set; }
         public string Empresa { get; set; }
         public string Telefone { get; set; }
         public string Observacao { get; set; }
         public string Email { get; set; }
         public string Cidade { get; set; }
-      
+        public string Estado { get; set; }
+
         public string JsonSerializar(Referencia referencia)
         {
             return JsonConvert.SerializeObject(referencia);
@@ -26,15 +27,17 @@ namespace AplicacaoReferenciasComerciais
         }
 
 
-        /*public static void Main(string[] args)
+        public static void Main(string[] args)
         {
 
             Referencia referencia = new Referencia();
 
-            referencia.Nome = "Joao";
+            referencia.NomeFuncionario = "Joao";
+            referencia.Empresa = "Matsuda";
             referencia.Telefone = "991098256";
             referencia.Observacao = "Não passa";
             referencia.Cidade = "Porto calvo";
+            referencia.Estado = "Alagoas";
             referencia.Email = "Guabi@outlook.com";
 
 
@@ -43,7 +46,7 @@ namespace AplicacaoReferenciasComerciais
 
             Referencia deserializedReferencias = JsonConvert.DeserializeObject<Referencia>(output);
             Console.Write(output);
-        }*/
+        }
 
     }
 }
